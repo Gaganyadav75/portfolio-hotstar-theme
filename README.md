@@ -1,10 +1,15 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Gagan Yadav — Portfolio
 
-## Getting Started
+This is a modern portfolio website built with [**Next.js 15**](https://nextjs.org), bootstrapped using [\`create-next-app\`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).  
+It showcases my work, skills, and personality — all wrapped in a fast, responsive, and developer-friendly design.
+
+---
+
+## ⚙️ Getting Started
 
 First, run the development server:
 
-```bash
+\`\`\`bash
 npm run dev
 # or
 yarn dev
@@ -12,25 +17,56 @@ yarn dev
 pnpm dev
 # or
 bun dev
-```
+\`\`\`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open [http://localhost:3000](http://localhost:3000) in your browser to see your app live.  
+The page updates automatically as you edit files — no need to reload manually.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Start customizing the homepage by editing:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+\`\`\`bash
+app/page.tsx
+\`\`\`
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🧩 Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Next.js 15** – React Framework for production  
+- **TypeScript** – Static typing for scalability  
+- **Tailwind CSS** – Utility-first styling  
+- **next/font (Geist)** – Beautiful, fast-loading typography  
+- **Vercel** – Effortless deployment  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 💡 Learn More
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To learn more about the tools used:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Next.js Documentation](https://nextjs.org/docs) — Explore powerful features and API.  
+- [Learn Next.js](https://nextjs.org/learn) — Interactive step-by-step guide.  
+- [Tailwind Docs](https://tailwindcss.com/docs) — Master modern CSS in minutes.  
+
+You can also visit the [Next.js GitHub Repo](https://github.com/vercel/next.js) to contribute or provide feedback.
+
+---
+
+## 🚀 Deployment
+
+The easiest way to deploy your Next.js app is with [**Vercel**](https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app-readme).
+
+Read the [Next.js deployment guide](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+---
+
+## 👨‍💻 About Me
+
+I’m **Gagan Yadav**, a passionate **Front-End Web Developer** from Noida, India.  
+Focused on crafting responsive, fast, and modern user experiences using **React, Next.js, and Node.js**.  
+
+Let’s build something awesome together! 🌐  
+
+📫 **Email:** [7549gaganyadav@gmail.com](mailto:7549gaganyadav@gmail.com)  
+💼 **LinkedIn:** [linkedin.com/in/gaganyadav75](https://linkedin.com/in/gaganyadav75)  
+💻 **GitHub:** [github.com/Gaganyadav75](https://github.com/Gaganyadav75)
