@@ -5,7 +5,7 @@ import Post from '@/components/reuseable/Post';
 import { SlideInOnScroll } from '@/components/reuseable/ScrollOnDisplay';
 import React from 'react'
 
-function page() {
+function Page() {
 
     const {getProjectHero,getAllProjects} = useData()
 
@@ -22,7 +22,7 @@ function page() {
                     <div className='relative w-full flex  z-50 '>
                         <div className="relative flex flex-col lg:w-[70%] -top-40 w-full">
                             {projects.map((ele, ind) => {
-                                return <SlideInOnScroll key={"post_" + ind} > <Post id={ind} background={ele.background} slug={ele.slug} title={ele.title} description={ele.description[0]} list1={ele.list1} /></SlideInOnScroll>
+                                return <SlideInOnScroll key={"post_" + ind} > <Post background={ele.background} slug={ele.slug} title={ele.title} description={ele.description[0]} list1={ele.list1} /></SlideInOnScroll>
                             })
                             }
                         </div>
@@ -35,4 +35,4 @@ function page() {
 
 }
 
-export default page
+export default Page

@@ -2,13 +2,14 @@
 import { useData } from '@/components/MainAppContext'
 import MainSection from '@/components/MainSection';
 import Post from '@/components/reuseable/Post';
+import { ProjectInfo } from '@/components/types';
 import React from 'react'
 
 type ProjectPageProps = {
   params: Promise<{ project: string }>;
 };
 
-export default function page({params}:ProjectPageProps) {
+export default function Page({params}:ProjectPageProps) {
     const { project } = React.use(params);
 
     const {getAllProjects,getProject} = useData()
@@ -26,8 +27,8 @@ export default function page({params}:ProjectPageProps) {
       <div className="flex flex-col w-full">
           <div className=' lg:w-[70%] w-full flex flex-col'>
               <h2 className="text-xl font-semibold pl-2">Projects</h2>
-              {projects?.map((ele: any, ind: any) => {
-                  return <Post key={"post_" + ind} id={ind}  slug={ele.slug} background={ele.background} title={ele.title} description={ele.description[0]} list1={ele.list1} />
+              {projects?.map((ele: ProjectInfo, ind: number) => {
+                  return <Post key={"post_" + ind}  slug={ele.slug} background={ele.background} title={ele.title} description={ele.description[0]} list1={ele.list1} />
               })
               }
           </div>

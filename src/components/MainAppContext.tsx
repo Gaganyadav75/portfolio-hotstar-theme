@@ -42,7 +42,6 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const getAllProjects = (): ProjectInfo[]  =>
     MainData.projects.list;
 
-  const getContacts = (): {[key : string]:ContactInfo} => MainData.contacts;
   const getContact = (profileKey?:string): ContactInfo => {
     const key = profileKey || sessionStorage.getItem("profile") || "Recruiters";
     return MainData.contacts[key as keyof typeof myInfo] || MainData.myInfo["Recruiters"];

@@ -17,7 +17,7 @@ export const FadeImage: React.FC<FadeImageProps> = ({
 
   // Fade in on mount
   useEffect(() => {
-    const timeout = setTimeout(() => setVisible(true), 20); // small delay to trigger transition
+    setTimeout(() => setVisible(true), 20); // small delay to trigger transition
     return () => setVisible(false); // triggers fade out on unmount
   }, []);
 

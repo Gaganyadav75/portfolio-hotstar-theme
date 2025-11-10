@@ -33,7 +33,7 @@ export default function MainInfo({data}:{data:MyInfo}) {
       }
       {data.button2 &&
       <a className='cursor-pointer' href={data.button2.email?"mailto:"+data.button2.email:data.button2.link}>
-      <button title={data.button2.title} onDoubleClick={()=>{data?.button2?.email && navigator.clipboard.writeText(data.button2.email)}} className="hover:bg-[#4a5565be] px-4 py-3 ml-3 bg-[#4a556592]  rounded-lg">
+      <button title={data.button2.title} onDoubleClick={()=>{if(data?.button2?.email)navigator.clipboard.writeText(data.button2.email)}} className="hover:bg-[#4a5565be] px-4 py-3 ml-3 bg-[#4a556592]  rounded-lg">
         
           {data.button2.text}
       </button>
@@ -86,7 +86,7 @@ const Languages = ({
     active = 0,
   }: {
     list: string[];
-    active?: Number;
+    active?: number;
   }) => {
     return (
       list.map((ele,ind)=>

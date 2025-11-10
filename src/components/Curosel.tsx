@@ -1,5 +1,5 @@
 "use client"
-import React, { useState, useEffect, useRef, ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 

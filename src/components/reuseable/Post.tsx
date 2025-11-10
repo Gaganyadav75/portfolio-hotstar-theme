@@ -2,7 +2,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-function Post({id,slug,background,title,list1,description}:{id:number,slug:string,background:string,title:string,list1:{text:string,title:string}[],description:string}) {
+function Post({slug,background,title,list1,description}:{slug:string,background:string,title:string,list1:{text:string,title:string}[],description:string}) {
  
   return (
     <div >
@@ -31,7 +31,7 @@ export default Post
 
 
 
-export const EachPoster = ({link,details,active=false}:{link:string,details:any,active?:Boolean})=>{
+export const EachPoster = ({link,details,active=false}:{link:string,details:any,active?:boolean})=>{
 
 
   return <Link href={link}><div className={`group cursor-pointer relative overflow-hidden w-full aspect-video bg-amber-400 rounded-xl`}>

@@ -1,12 +1,12 @@
 "use client"
-import React, { ActionDispatch, Dispatch, useEffect, useState } from 'react'
+import React, { Dispatch, useEffect } from 'react'
 import Image from "next/image";
 
 
 function StartPage({viewer,setViewer}:{viewer:boolean|null,setViewer:Dispatch<boolean>}) {
 
   useEffect(()=>{
-    let vwr = sessionStorage.getItem("profile");
+    const vwr = sessionStorage.getItem("profile");
     const profiles = [
       "Recruiters", "Clients", "Friends", "Developer" 
     ];
@@ -15,7 +15,7 @@ function StartPage({viewer,setViewer}:{viewer:boolean|null,setViewer:Dispatch<bo
     }else{
       setViewer(false)
     }
-  },[])
+  },[setViewer])
 
   if(viewer==null){
     return <div className='absolute top-1/2 left-1/2 -translate-1/2 w-10 h-10 rounded-full border-4 border-red-500 border-b-white animate-spin'></div>
@@ -36,7 +36,7 @@ function StartPage({viewer,setViewer}:{viewer:boolean|null,setViewer:Dispatch<bo
           </div>  
         </div>
         <div className=" h-40 flex items-end">
-          <h1 className="text-3xl font-semibold mb-8 w-full text-center">Who's are you?</h1>
+          <h1 className="text-3xl font-semibold mb-8 w-full text-center">Who&apos;s are you?</h1>
         </div>
       </div>
       <ProfilesLister setViewer={setViewer}/>

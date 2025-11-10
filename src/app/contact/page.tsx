@@ -3,7 +3,7 @@ import MainSection from '@/components/MainSection'
 import React from 'react'
 import { useData } from '@/components/MainAppContext';
 
-function page() {
+function Page() {
     const {getContact} = useData()
   return (
     <MainSection data={getContact()}>
@@ -13,4 +13,4 @@ function page() {
 }
 
 
-export default page
+export default Page

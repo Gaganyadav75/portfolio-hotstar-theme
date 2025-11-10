@@ -6,7 +6,7 @@ import { SlideInOnScroll } from '@/components/reuseable/ScrollOnDisplay'
 import { TechInfo } from '@/components/types'
 
 
-function page() {
+function Page() {
 
 
   const { getSkilltHero,getAllSkills } = useData()
@@ -27,7 +27,7 @@ function page() {
 
 }
 
-export default page
+export default Page
 
 
 const Skills = ({skills}:{skills:TechInfo[]})=>{

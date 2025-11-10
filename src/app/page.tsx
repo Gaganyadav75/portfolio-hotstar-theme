@@ -3,12 +3,11 @@ import { useData } from "@/components/MainAppContext";
 import MainSection from "@/components/MainSection";
 import { EachPoster } from "@/components/reuseable/Post";
 import ScrollableSection from "@/components/reuseable/ScrollableSection";
-import { createContext, useEffect } from "react";
+import { useEffect } from "react";
 
-export const profilecontext = createContext(0);
 const last = 6;
 
-export default function Home() {
+export default function Page() {
 
   const {getProfile,getAllProjects,getAllSkills} = useData()
 
