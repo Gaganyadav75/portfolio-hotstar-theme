@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect } from "react";
+import React from "react";
 import MainInfo from "./MainInfo";
 import { FadeImage } from "./reuseable/FadeImage";
 import { MyInfo } from "./types";

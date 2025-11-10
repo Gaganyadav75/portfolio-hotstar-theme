@@ -1,7 +1,5 @@
 "use client"
 import React from 'react'
-import { publish } from './event'
-import { MainData } from '@/data/data'
 import Link from 'next/link'
 
 function Post({id,slug,background,title,list1,description}:{id:number,slug:string,background:string,title:string,list1:{text:string,title:string}[],description:string}) {

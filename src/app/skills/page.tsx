@@ -1,9 +1,7 @@
 "use client"
 import { useData } from '@/components/MainAppContext'
 import MainSection from '@/components/MainSection'
-import BG_Overlays from '@/components/MainSection'
-import Navbar from '@/components/Navbar'
-import Post, { EachPoster } from '@/components/reuseable/Post'
+import { EachPoster } from '@/components/reuseable/Post'
 import { SlideInOnScroll } from '@/components/reuseable/ScrollOnDisplay'
 import { TechInfo } from '@/components/types'
 

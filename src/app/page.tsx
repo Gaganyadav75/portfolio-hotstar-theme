@@ -1,12 +1,9 @@
 "use client"
-import ClientPage from "@/components/Client";
 import { useData } from "@/components/MainAppContext";
 import MainSection from "@/components/MainSection";
 import { EachPoster } from "@/components/reuseable/Post";
 import ScrollableSection from "@/components/reuseable/ScrollableSection";
-import { SlideInOnScroll } from "@/components/reuseable/ScrollOnDisplay";
-import { MainData } from "@/data/data";
-import { createContext, useContext, useEffect } from "react";
+import { createContext, useEffect } from "react";
 
 export const profilecontext = createContext(0);
 const last = 6;
